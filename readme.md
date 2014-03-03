@@ -4,4 +4,4 @@ Foreclosure Web App
 
 ## important notes
 
-* [style guide](http://embed.plnkr.co/9bV3EY/preview)
+* [style guide](http://embed.plnkr.co/TrUKp6/preview)
