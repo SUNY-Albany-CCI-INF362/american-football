@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html class="no-js">
     <head>
@@ -37,3 +38,16 @@
         </script>
     </body>
 </html>
+=======
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p> Goodluck from Team4 :) </p>
+</body>
+</html>
+>>>>>>> bf679533c5ef3b75892479f271030ddcff8be60c
