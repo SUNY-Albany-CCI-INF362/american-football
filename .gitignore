@@ -219,3 +219,8 @@ pip-log.txt
 # SASS
 .sass-cache
 node_modules
+
+*.DS_Store
+/css/*
+/bower_components/*
+/node_modules/*
