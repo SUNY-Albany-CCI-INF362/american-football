@@ -49,7 +49,7 @@
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Arimo", sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -62,8 +62,10 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
+$primary-color: #57818b;
+$secondary-color: #f0daaa;
+$ejc-red: #92392d;
+$grey-bg: #e4e4e4;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -877,7 +879,7 @@
 // $reveal-overlay-bg-old: #000;
 
 // We use these to control the style of the modal itself.
-// $reveal-modal-bg: #fff;
+$reveal-modal-bg: $grey-bg;
 // $reveal-position-top: 50px;
 // $reveal-default-width: 80%;
 // $reveal-modal-padding: rem-calc(20);
@@ -1208,3 +1210,9 @@
 // $include-html-visibility-classes: $include-html-classes;
 // $include-table-visibility-classes: true;
 // $include-legacy-visibility-classes: true;
+
+.nav_bottom {
+	position: absolute;
+	bottom:0;
+	right:50%;
+}
