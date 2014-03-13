@@ -2,17 +2,33 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+// Original version
+    // sass: {
+    //   options: {
+    //     includePaths: ['bower_components/foundation/scss']
+    //   },
+    //   dist: {
+    //     options: {
+    //       outputStyle: 'compressed',
+    //       sourceComments: 'map'
+    //     },
+    //     files: {
+    //       'css/app.css': 'scss/app.scss'
+    //     }
+    //   }
+    // },
     sass: {
-      options: {
-        includePaths: ['bower_components/foundation/scss']
-      },
+      // options: {
+      //   includePaths: ['bower_components/foundation/scss']
+      // },
       dist: {
         options: {
-          outputStyle: 'compressed'
+          outputStyle: 'compressed',
+          sourceComments: 'map'
         },
         files: {
           'css/app.css': 'scss/app.scss'
-        }        
+        }
       }
     },
 
@@ -26,9 +42,8 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 
   grunt.registerTask('build', ['sass']);
   grunt.registerTask('default', ['build','watch']);
-}
+};
