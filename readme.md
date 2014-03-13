@@ -4,7 +4,7 @@ Foreclosure Web App
 
 ## changelog
 
-* want to add navigation to your page? IT'S SO EASY NOW*!!!*
+* want to add navigation to your page? *IT'S SO EASY NOW!!!*
 ````    
 <div id="navbarfooter"></div>
 <script>$('#navbarfooter').load("navigation.html");</script>
