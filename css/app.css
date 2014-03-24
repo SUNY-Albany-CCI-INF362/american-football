@@ -7854,6 +7854,31 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
+.nav-bg {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4d737c;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: #57818b;
+}
+.nav-bg > :first-child {
+  margin-top: 0;
+}
+.nav-bg > :last-child {
+  margin-bottom: 0;
+}
+.nav-bg h1, .nav-bg h2, .nav-bg h3, .nav-bg h4, .nav-bg h5, .nav-bg h6, .nav-bg p {
+  color: white;
+}
+.nav-bg h1, .nav-bg h2, .nav-bg h3, .nav-bg h4, .nav-bg h5, .nav-bg h6 {
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+.nav-bg h1.subheader, .nav-bg h2.subheader, .nav-bg h3.subheader, .nav-bg h4.subheader, .nav-bg h5.subheader, .nav-bg h6.subheader {
+  line-height: 1.4;
+}
+
 .text-left {
   text-align: left !important;
 }
