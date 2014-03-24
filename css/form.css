@@ -1,0 +1,40 @@
+header{
+  width: 100%;
+  background-color: #9dbdc5;
+}
+  
+header img {
+    display: block;
+    max-width: 154px;
+    margin: 0 auto;
+}
+.wrapper h1{
+	text-align: center;
+	color: #57818b;
+}
+
+.wrapper h2{
+	text-align: center;
+	color: #92392d;
+}
+
+.highlight{
+   width: 100%;
+ }
+
+.highlight h3{
+    background-color: #9dbdc5;
+    text-align: center;
+    color: white;
+  }
+
+ .highlight p{
+    padding: 1em;
+    background: #e1c68a;
+}
+
+@media only screen and (max-width: 30em) {
+ .highlight p{
+    display:none;
+  }
+}
