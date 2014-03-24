@@ -1212,3 +1212,8 @@ $reveal-modal-bg: $grey-bg;
 // $include-table-visibility-classes: true;
 // $include-legacy-visibility-classes: true;
 
+.nav-bg {
+	@include panel (
+		$bg: $primary-color
+		)
+}
