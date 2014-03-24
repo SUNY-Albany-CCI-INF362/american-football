@@ -9,15 +9,6 @@ Foreclosure Web App
 <div id="navbarfooter"></div>
 <script>$('#navbarfooter').load("navigation.html");</script>
 ````
-
-<<<<<<< HEAD
-=======
-* **PLEASE** add the following to the head of each page you create:
-````	
-<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic' rel='stylesheet' type='text/css'>
-````
-
->>>>>>> 215232c0e31418ddd2211dc42efcc42094812eb1
 * ripped out some of the old html5 crap, we don't need it any more
 * started adding in variables for our colors
 ````
