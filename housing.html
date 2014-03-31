@@ -22,7 +22,7 @@
     <div class="row">
       <div class="small-12 columns">
         <label>Street Address
-        <input type="text" placeholder="123 Main Street" />
+        <input id="addr" type="text" placeholder="123 Main Street" />
         </label>
       </div>
     </div>
@@ -30,19 +30,19 @@
     <div class="row">
       <div class="small-6 columns">
         <label>City
-        <input type="text" placeholder="Anytown" />
+        <input id="city"type="text" placeholder="Anytown" />
         </label>
       </div>
     
       <div class="small-3 columns">
         <label>State
-        <input type="text" placeholder="NY" />
+        <input id="state"type="text" placeholder="NY" />
         </label>
       </div>
 
       <div class="small-3 columns">
         <label>Zip
-        <input type="number" placeholder="12345" />
+        <input id="zip" type="number" placeholder="12345" />
         </label>
       </div>
     </div>
@@ -50,9 +50,9 @@
   </form>
 
 <script>
-  $("#inputform").submit(function(event) {
+  $("#inputform").on( "submit" , function(event) {
     event.preventDefault();
-    var formstring = $("#inputform").serialize();
+    var formstring = $(this).serialize();
     alert(formstring);
     });
     </script>
