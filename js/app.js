@@ -2,7 +2,7 @@ $(document).foundation();
 
 var menu_logic = function(selection) {
 	if (selection === "Timeline") {
-		return $('.body').load("timeline.html");
+		return $('.body').load("timeline1.html");
 	}
 	if (selection === "Resources") {
 		return $('.body').load("resources.html");
