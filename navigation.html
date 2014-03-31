@@ -13,18 +13,19 @@
   </head>
 
   <body>
-  <div class="nav-bg"> <!--todo: fix the bg color thing, why arent mixins working?????????-->
+  <div class="nav-bg">
   <p class="text-center"><a href="#" data-reveal-id="modalNav" data-reveal><img src = "img/navbtn.png" width="50em" height="50em"></a></p>
   </div>
 
   <div id="modalNav" class="reveal-modal tiny" data-reveal>
     <h4 class="text-center">Navigation</h4>
-    <a href=# class="button expand radius"><i class="fa fi-list-number"></i> Timeline</a><br>
-    <a href="glossary.html" class="button expand radius"><i class="fa fi-page-multiple"></i> Resources</a><br>
-    <a href=# class="button expand radius"><i class="fa fi-torsos-all"></i> About</a><br>
-    <a href=# class="button expand radius"><i class="fa fi-address-book"></i> Housing Counselors</a><br>
+    <a href=# class="button expand radius"><i class="fa fi-list-number"></i>Timeline</a><br>
+    <a href=# class="button expand radius"><i class="fa fi-page-multiple"></i>Resources</a><br>
+    <a href=# class="button expand radius"><i class="fa fi-torsos-all"></i>About</a><br>
+    <a href=# class="button expand radius"><i class="fa fi-address-book"></i>Housing Counselors</a><br>
 
     <script>$(".button").on("click", function() { 
+      console.log($(this).text());
       menu_logic($(this).text()); });</script>
 
   <a class="close-reveal-modal">&#215;</a>

@@ -1215,5 +1215,8 @@ $reveal-modal-bg: $grey-bg;
 .nav-bg {
 	@include panel (
 		$bg: $primary-color
-		)
+		);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
