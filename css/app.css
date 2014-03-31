@@ -7861,6 +7861,9 @@ th.hide-for-touch {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
   background: #57818b;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 .nav-bg > :first-child {
   margin-top: 0;
