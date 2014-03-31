@@ -7882,6 +7882,73 @@ th.hide-for-touch {
   line-height: 1.4;
 }
 
+.nav-button {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  /*     @else                            { font-size: $padding - rem-calc(2); } */
+  padding-top: 1rem;
+  padding-bottom: 1.0625rem;
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+  background-color: #57818b;
+  border-color: #46676f;
+  color: white;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.nav-button:hover, .nav-button:focus {
+  background-color: #46676f;
+}
+.nav-button:hover, .nav-button:focus {
+  color: white;
+}
+
+.nav-button-sm {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  /*     @else                            { font-size: $padding - rem-calc(2); } */
+  background-color: #57818b;
+  border-color: #46676f;
+  color: white;
+  -webkit-border-radius: 50em;
+  border-radius: 50em;
+}
+.nav-button-sm:hover, .nav-button-sm:focus {
+  background-color: #46676f;
+}
+.nav-button-sm:hover, .nav-button-sm:focus {
+  color: white;
+}
+
 .text-left {
   text-align: left !important;
 }
