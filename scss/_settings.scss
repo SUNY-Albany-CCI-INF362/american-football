@@ -1215,5 +1215,25 @@ $reveal-modal-bg: $grey-bg;
 .nav-bg {
 	@include panel (
 		$bg: $primary-color
-		)
+		);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
+
+.nav-button {
+	@include button (
+		$bg: $primary-color,
+		$radius: 10px,
+		$full-width: true
+		);
+}
+
+.nav-button-sm {
+	@include button (
+		$bg: $primary-color,
+		$radius: 50em
+		);
+}
+
+
