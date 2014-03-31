@@ -20,14 +20,16 @@
   <div id="modalNav" class="reveal-modal tiny" data-reveal>
     <h4 class="text-center">Navigation</h4>
 
-    <a href=# class="button expand radius"><i class="fa fi-list-number"></i>Timeline</a><br>
-    <a href=# class="button expand radius"><i class="fa fi-page-multiple"></i>Resources</a><br>
-    <a href=# class="button expand radius"><i class="fa fi-torsos-all"></i>About</a><br>
-    <a href=# class="button expand radius"><i class="fa fi-address-book"></i>Housing Counselors</a><br>
+    <a href=# class="nav-button expand radius"><i class="fa fi-list-number"></i>Timeline</a><br>
+    <a href=# class="nav-button expand radius"><i class="fa fi-page-multiple"></i>Resources</a><br>
+    <a href=# class="nav-button expand radius"><i class="fa fi-torsos-all"></i>About</a><br>
+    <a href=# class="nav-button expand radius"><i class="fa fi-address-book"></i>Housing Counselors</a><br>
+    <a href=# class="nav-button-sm radius left"><i class="fa fi-home large"></i>Home</a>
+    <a href=# class="nav-button-sm radius right"><i class="fa fi-arrow-left large"></i>Back</a>
 
-    <script>$(".button").on("click", function() { 
-      console.log($(this).text());
-      menu_logic($(this).text()); });</script>
+    <script>$(".nav-button").on("click", function() { 
+      menu_logic($(this).text());
+       });</script>
 
   <a class="close-reveal-modal">&#215;</a>
   </div>
