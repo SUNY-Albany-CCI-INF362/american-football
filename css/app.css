@@ -7864,6 +7864,7 @@ th.hide-for-touch {
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin-bottom: 0;
 }
 .nav-bg > :first-child {
   margin-top: 0;

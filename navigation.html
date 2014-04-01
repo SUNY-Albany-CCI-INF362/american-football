@@ -30,7 +30,14 @@
 
     <script>$(".nav-button").on("click", function() { 
       menu_logic($(this).text());
-      });</script>
+      $('a.close-reveal-modal').trigger('click');
+      });
+
+       $(document).on('close', '[data-reveal]', function () {
+          $('.reveal-modal-bg').remove();
+      });
+
+      </script>
 
   
   </div>
