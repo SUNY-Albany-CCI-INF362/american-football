@@ -51,10 +51,10 @@ body {
 
 body {
   background: white;
-  color: #e1c68a;
+  color: #222222;
   padding: 0;
   margin: 0;
-  font-family: Times New Roman;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
