@@ -50,11 +50,11 @@ body {
 }
 
 body {
-  background:  #e1c68a;
+  background: white;
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: Times New Roman;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -8645,3 +8645,12 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
+p.para
+{
+  font-family: Times New Roman;
+}
+
+body.color
+{
+  background-color:  #e1c68a;
+}
