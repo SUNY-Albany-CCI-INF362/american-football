@@ -1201,7 +1201,7 @@ $reveal-modal-bg: $grey-bg;
 // $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
 
 // Sticky Class
-// $topbar-sticky-class: ".sticky";
+$topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 
 //
@@ -1248,5 +1248,6 @@ $nav-menu-height: 75px;
 .wrapper-body {
 	margin-bottom: $nav-menu-height;
 }
+
 
 
