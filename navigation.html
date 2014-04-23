@@ -29,13 +29,12 @@
     <a class="close-reveal-modal" id="close_modal">&#215;</a>
 
     <script>$(".nav-button").on("click", function() { 
-      $('a.close-reveal-modal').trigger('click');
-      });
-
-       $(document).on('close', '[data-reveal]', function () {
+      $('a.close-reveal-modal').trigger('click', function() {
+        $(document).on('close', '[data-reveal', function() {
           $('.reveal-modal-bg').remove();
+          });
+        });
       });
-
       </script>
 
   

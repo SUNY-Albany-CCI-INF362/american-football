@@ -7957,7 +7957,11 @@ th.hide-for-touch {
 }
 
 .wrapper-body {
-  margin-bottom: 75px;
+  margin-bottom: 75px !important;
+}
+
+.body {
+  margin-bottom: 75px !important;
 }
 
 .text-left {
