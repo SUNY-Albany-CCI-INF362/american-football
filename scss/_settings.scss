@@ -48,7 +48,7 @@
 // $total-columns: 12;
 
 // We use these to control various global styles
-// $body-bg: #fff;
+$body-bg: $primary-color;
 // $body-font-color: #222;
 $body-font-family: "Arimo", sans-serif;
 // $body-font-weight: normal;
@@ -1134,11 +1134,11 @@ $reveal-modal-bg: $grey-bg;
 // TOP BAR
 //
 
-// $include-html-top-bar-classes: $include-html-classes;
+$include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: $primary-color;
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: 45px;
@@ -1149,9 +1149,9 @@ $reveal-modal-bg: $grey-bg;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
+$topbar-dropdown-bg: $primary-color;
 // $topbar-dropdown-link-color: #fff;
-// $topbar-dropdown-link-bg: #333;
+$topbar-dropdown-link-bg: $grey-bg;
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
@@ -1246,8 +1246,15 @@ $topbar-sticky-class: ".sticky";
 $nav-menu-height: 75px;
 
 .wrapper-body {
-	margin-bottom: $nav-menu-height;
+	margin-bottom: $nav-menu-height !important;
 }
 
+.body-wrapper {
+	margin-bottom: $nav-menu-height !important;
+}
+
+.body {
+	margin-bottom: $nav-menu-height !important;
+}
 
 
