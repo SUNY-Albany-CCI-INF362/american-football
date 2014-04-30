@@ -1,4 +1,4 @@
-header{
+/*header{
   width: 100%;
   background-color: #9dbdc5;
 }
@@ -32,9 +32,20 @@ header img {
     padding: 1em;
     background: #e1c68a;
 }
-
+*/
 @media only screen and (max-width: 30em) {
  .highlight p{
     display:none;
+
+  }
+  .highlight h3{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d8d8d8;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: #f2f2f2;
+  text-align: center;
+  color: #333333;
   }
 }
