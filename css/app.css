@@ -7968,6 +7968,23 @@ th.hide-for-touch {
   margin-bottom: 75px !important;
 }
 
+.contain-to-grid {
+  background: #57818b;
+  margin-bottom: 10px;
+}
+
+.top-bar {
+  background: #57818b;
+}
+
+.button {
+  background: #92392d;
+}
+
+.button:hover {
+  background: #e4e4e4;
+}
+
 .text-left {
   text-align: left !important;
 }
