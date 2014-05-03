@@ -1141,11 +1141,11 @@ $topbar-bg-color: $primary-color;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: 45px;
-// $topbar-margin-bottom: 0;
+$topbar-height: 50px;
+$topbar-margin-bottom: 5px;
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: normal;
+$topbar-title-weight: strong;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
@@ -1257,4 +1257,19 @@ $nav-menu-height: 75px;
 	margin-bottom: $nav-menu-height !important;
 }
 
+.contain-to-grid {
+	background: $primary-color;
+	margin-bottom: 10px;
+}
 
+.top-bar {
+	background: $primary-color;
+}
+
+.button {
+	background: $ejc-red;
+}
+
+.button:hover {
+	background: $grey-bg;
+}

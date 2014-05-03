@@ -57,41 +57,12 @@
     <div class="body-wrapper">
   <h2 class="text-center">Find A Housing Counselor</h2>
 
-  <form id="inputform">
-    <div class="row">
-      <div class="small-12 columns">
-        <label>Street Address
-        <input id="addr" type="text" placeholder="123 Main Street" />
-        </label>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="small-6 columns">
-        <label>City
-        <input id="city"type="text" placeholder="Anytown" />
-        </label>
-      </div>
-    
-      <div class="small-3 columns">
-        <label>State
-        <input id="state"type="text" placeholder="NY" />
-        </label>
-      </div>
-
-      <div class="small-3 columns">
-        <label>Zip
-        <input id="zip" type="number" placeholder="12345" />
-        </label>
-      </div>
-    </div>
-  <input id="formbutton" class="button medium small-12" type="submit" value="Submit" />
-  </form>
-        <hr>
 <div class="text-center">
-<h3>Helpful Links</h3>
-    <a href="http://data.hud.gov/housing_counseling.html" class="medium-5 button" id="center">U.S. Department of Housing and Urban Development</a><br/>
-        <a href="http://www.consumerfinance.gov/find-a-housing-counselor/" class="medium button">Consumer Financial Protection Bureau</a><br/>
+<div class="row">
+<div class="small-12 columns text-left"><p>We strongly advise you to obtain the FREE assistance of a local housing counselor. A housing counselor can assist you in communicating with your mortgagelender. Taking the first step of contacting a housing counseling agency and making an appointment will help you immensely in this foreclosure process. You can find a housing counselor near you using the links below.</p></div>
+  <h3>Helpful Links</h3>
+    <a href="http://data.hud.gov/housing_counseling.html" class="medium-5 button greenbtn" id="center">Information about Housing Counseling</a><br/>
+        <a href="http://www.consumerfinance.gov/find-a-housing-counselor/" class="medium button greenbtn">Find a Housing Counselor</a><br/>
     </div>
 </div>
   <!--Nav-->
@@ -103,13 +74,5 @@
 </div>
   <!--end nav-->
         
-
-<script>
-  $("#inputform").on( "submit" , function(event) {
-    event.preventDefault();
-    var formstring = $(this).serialize();
-    alert(formstring);
-    });
-    </script>
 </body>
 </html>
