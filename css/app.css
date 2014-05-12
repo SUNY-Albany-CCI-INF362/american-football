@@ -7859,7 +7859,7 @@ th.hide-for-touch {
   border-width: 1px;
   border-color: #4d737c;
   margin-bottom: 1.25rem;
-  padding: 1.25rem;
+  padding: 1px;
   background: #57818b;
   position: fixed;
   bottom: 0;
@@ -7950,6 +7950,31 @@ th.hide-for-touch {
   color: white;
 }
 
+.hud-warn {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e9c984;
+  margin-bottom: 1.25rem;
+  padding: 20px;
+  background: #f0daaa;
+}
+.hud-warn > :first-child {
+  margin-top: 0;
+}
+.hud-warn > :last-child {
+  margin-bottom: 0;
+}
+.hud-warn h1, .hud-warn h2, .hud-warn h3, .hud-warn h4, .hud-warn h5, .hud-warn h6, .hud-warn p {
+  color: #333333;
+}
+.hud-warn h1, .hud-warn h2, .hud-warn h3, .hud-warn h4, .hud-warn h5, .hud-warn h6 {
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+.hud-warn h1.subheader, .hud-warn h2.subheader, .hud-warn h3.subheader, .hud-warn h4.subheader, .hud-warn h5.subheader, .hud-warn h6.subheader {
+  line-height: 1.4;
+}
+
 .spacer {
   position: relative;
   width: 100%;
@@ -7957,15 +7982,16 @@ th.hide-for-touch {
 }
 
 .wrapper-body {
-  margin-bottom: 75px !important;
+  margin-bottom: 50px !important;
 }
 
 .body-wrapper {
-  margin-bottom: 75px !important;
+  margin-bottom: 50px !important;
 }
 
 .body {
-  margin-bottom: 75px !important;
+  margin-bottom: 50px !important;
+  background: linear-gradient(left, white 30%, #57818b 30%) !important;
 }
 
 .contain-to-grid {
@@ -7978,11 +8004,53 @@ th.hide-for-touch {
 }
 
 .button {
-  background: #92392d;
+  background: #57818b;
 }
 
 .button:hover {
   background: #e4e4e4;
+}
+
+.unicodemenu {
+  font-size: 2em;
+  color: white;
+}
+
+.menulink {
+  color: white;
+}
+
+.menulink:hover {
+  color: #e4e4e4;
+}
+
+.top-bar-section li a:not(.button) {
+  background: #57818b;
+  color: white;
+}
+
+.top-bar-section li a:not(.button):hover {
+  background: #e4e4e4;
+  color: white;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #57818b;
+  color: white;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: #e4e4e4;
+  color: #57818b;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+  background: #e4e4e4;
+  color: #57818b;
+}
+
+a {
+  color: #57818b;
 }
 
 .text-left {
