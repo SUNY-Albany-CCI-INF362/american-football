@@ -172,9 +172,9 @@ $grey-bg: #e4e4e4;
 // $code-font-weight: bold;
 
 // We use these to style anchors
-// $anchor-text-decoration: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-text-decoration: none;
+$anchor-font-color: $primary-color;
+$anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -1238,6 +1238,14 @@ $topbar-sticky-class: ".sticky";
 		);
 }
 
+.hud-warn {
+	@include panel (
+		$bg: $secondary-color,
+		$padding: 20px,
+		$adjust: true 
+		);
+}
+
 .spacer {
 	position: relative;
 	width: 100%;
@@ -1270,7 +1278,7 @@ $nav-menu-height: 50px;
 }
 
 .button {
-	background: $ejc-red;
+	background: $primary-color;
 }
 
 .button:hover {
@@ -1312,5 +1320,9 @@ $nav-menu-height: 50px;
 
 .top-bar-section ul li:hover:not(.has-form) > a {
 	background: $grey-bg;
+	color: $primary-color;
+}
+
+a {
 	color: $primary-color;
 }
