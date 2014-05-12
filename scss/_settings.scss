@@ -172,9 +172,9 @@ $grey-bg: #e4e4e4;
 // $code-font-weight: bold;
 
 // We use these to style anchors
-// $anchor-text-decoration: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-text-decoration: none;
+$anchor-font-color: $primary-color;
+$anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -1146,11 +1146,11 @@ $topbar-margin-bottom: 5px;
 
 // Controlling the styles for the title in the top bar
 $topbar-title-weight: strong;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-font-size: rem-calc(20);
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: $primary-color;
-// $topbar-dropdown-link-color: #fff;
+$topbar-dropdown-link-color: #fff;
 $topbar-dropdown-link-bg: $grey-bg;
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
@@ -1175,7 +1175,7 @@ $topbar-dropdown-link-bg: $grey-bg;
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;
 
-// $topbar-dropdown-label-color: #777;
+$topbar-dropdown-label-color: $primary-color;
 // $topbar-dropdown-label-text-transform: uppercase;
 // $topbar-dropdown-label-font-weight: bold;
 // $topbar-dropdown-label-font-size: rem-calc(10);
@@ -1214,7 +1214,8 @@ $topbar-sticky-class: ".sticky";
 
 .nav-bg {
 	@include panel (
-		$bg: $primary-color
+		$bg: $primary-color,
+		$padding: 1px
 		);
 	position: fixed;
 	bottom: 0;
@@ -1237,16 +1238,25 @@ $topbar-sticky-class: ".sticky";
 		);
 }
 
+.hud-warn {
+	@include panel (
+		$bg: $secondary-color,
+		$padding: 20px,
+		$adjust: true 
+		);
+}
+
 .spacer {
 	position: relative;
 	width: 100%;
 	height: 10em;
 }
 
-$nav-menu-height: 75px;
+$nav-menu-height: 50px;
 
 .wrapper-body {
 	margin-bottom: $nav-menu-height !important;
+	
 }
 
 .body-wrapper {
@@ -1255,6 +1265,7 @@ $nav-menu-height: 75px;
 
 .body {
 	margin-bottom: $nav-menu-height !important;
+	background: linear-gradient(left, white 30%, $primary-color 30%) !important;
 }
 
 .contain-to-grid {
@@ -1267,9 +1278,51 @@ $nav-menu-height: 75px;
 }
 
 .button {
-	background: $ejc-red;
+	background: $primary-color;
 }
 
 .button:hover {
 	background: $grey-bg;
+}
+
+.unicodemenu {
+	font-size: 2em;
+	color: white;
+}
+
+.menulink {
+	color: white;
+}
+
+.menulink:hover {
+	color: $grey-bg;
+}
+
+.top-bar-section li a:not(.button) {
+	background: $primary-color;
+	color: white;
+}
+
+.top-bar-section li a:not(.button):hover {
+	background: $grey-bg;
+	color: white;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background: $primary-color;
+	color: white;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background: $grey-bg;
+	color: $primary-color;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+	background: $grey-bg;
+	color: $primary-color;
+}
+
+a {
+	color: $primary-color;
 }
